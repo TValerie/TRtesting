@@ -1,0 +1,7 @@
+version: 0.1
+phases:
+  install:
+    commands:
+        - aws s3 cp ./ s3://test1-683142087938/ --recursive --include "*"
+        - aws s3 cp ./ s3://test2-683142087938/ --recursive --include "*"
+
